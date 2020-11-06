@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  background-image: url("Profile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  font-weight: lighter;
+  font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+  margin-left: 30px;
+  padding: 10px;
+}
+h1{
+  font-size: 70px;
+}
+h2{
+  font-size: 40px;
+}
+
+.text-element > .text{
+  border-right: 3px solid rgb(27, 27, 27);
+}

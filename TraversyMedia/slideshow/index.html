@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            overflow: hidden;
+        }
+        img{
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+        }
+    </style>
+    <img name='slide'>
+
+    <script>
+        var i = 0;
+        var image = ['img/1.jpg', 'img/2.jpg','img/3.jpg','img/4.jpg','img/5.jpg'];
+        var time = 1500;
+
+        function slideshow(){
+            document.slide.src = image[i];
+
+            if(i< image.length-1){
+                i++;
+            }else{
+                i = 0;
+            }
+
+            setTimeout(slideshow, time);
+        }
+
+        window.onload = slideshow;
+    </script>
+</body>
+</html>
