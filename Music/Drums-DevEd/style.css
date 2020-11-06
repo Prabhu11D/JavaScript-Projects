@@ -1,0 +1,121 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+     font-family: 'Montserrat', sans-serif;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    align-items: center;
+}
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+}
+header p{
+    font-size: 20px;
+}
+
+.pads{
+    background: rgb(0, 0, 0);
+    width: 80%;
+    display: flex;
+    opacity: 0.95;
+    box-shadow: #8b8b8b 1px 1px 10px 4px;;
+}
+.pads > div{
+    margin: 30px 20px 30px 20px;
+    border-radius: 9%;
+    height: 100px;
+    width: 100px;
+    flex: 1;
+    opacity: 0.9;
+}
+.pads >div:hover:nth-child(1){
+    background-color: #ffffff;
+    opacity: 1;
+    border: 3px solid #faa302;
+    box-shadow: #faa302 0px 0px 15px 1px;
+}
+.pads>div:hover:nth-child(2) {
+    background-color: #ffffff;
+    opacity: 1;
+    border: 3px solid #f72307;
+    box-shadow: #f72307 0px 0px 15px 1px;
+}
+.pads>div:hover:nth-child(3) {
+    background-color: #ffffff;
+    opacity: 1;
+    border: 3px solid #fa00bbe1;
+    box-shadow: #fa00bbe1 0px 0px 15px 1px;
+}
+.pads>div:hover:nth-child(4) {
+    background-color: #ffffff;
+    opacity: 1;
+    border: 3px solid #018dff;
+    box-shadow: #018dff 0px 0px 15px 1px;
+}
+.pads>div:hover:nth-child(5) {
+    background-color: #ffffff;
+    opacity: 1;
+    border: 3px solid #00ff40;
+    box-shadow: #00ff40 0px 0px 15px 1px;
+}
+.pads>div:hover:nth-child(6) {
+    background-color: #ffffff;
+    opacity: 1;
+    border: 3px solid #fffb00;
+    box-shadow: #fffb00 0px 0px 15px 1px;
+}
+.pad1{
+    background: #faa302;
+}
+.pad2 {
+    background: #f72307;
+}
+.pad3 {
+    background: #fa00bbe1;
+}
+.pad4 {
+    background: #018dff;
+}
+.pad5 {
+    background: #00ff40;
+}
+.pad6 {
+    background: #fffb00;
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual >div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 20%;
+    bottom: 0%;
+    z-index: -1;
+}
