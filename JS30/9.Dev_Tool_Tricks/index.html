@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Tricks</title>
+</head>
+<body>
+    <p onclick="makeGreen()">BreakDown</p>
+
+    <script>
+    const p = document.querySelector('p');
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+
+    function makeGreen() {
+      if(p.style.color == 'green'){
+          p.style.color = 'black'
+      }else{
+          p.style.color = 'green'
+      }
+      if(p.style.fontSize == '30px'){
+          p.style.fontSize = '20px'
+      }else{
+      p.style.fontSize = '30px';
+      }
+      if(p.innerHTML == 'BreakUp'){
+          p.innerHTML = "BreakDown";
+      }else{
+      p.innerHTML = "BreakUp";
+      }
+    }
+
+    // Regular
+    console.log("Regular console.log()");
+
+    // Interpolated
+    console.log('The format specifier %s', "FORMAT %s");
+
+    // Styled
+    console.log("%c Styled Text", 'color: red; font-size: 20px; background-color: #ddd');
+    
+    // warning!
+    console.warn("Warning Error");
+
+    // Error :|
+    console.error("Error at ->");
+
+    // Info
+    console.info("Human are great but not great");
+
+    // Testing
+    console.assert(1===10, "That's wrong");
+
+    // clearing
+    // console.clear();
+
+    // Viewing DOM Elements
+    console.dir(p);
+
+    // Grouping together
+    dogs.forEach(dog => {
+    console.group('animal-data');
+        console.log(`Name : ${dog.name}`);
+        console.log(`Age : ${dog.age}`);
+    console.groupEnd('animal-data');
+    });
+
+    // counting
+    console.count("Prabhu");
+    console.count("Ammu");
+    console.count("Ammu");
+    console.count("Prabhu");
+    console.count("Ammu");
+
+
+    // timing
+    console.time();
+    fetch('https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json')
+        .then(data => data.json())
+        .then(data => data.length);
+    console.timeEnd();
+
+    </script>
+</body>
+</html>
