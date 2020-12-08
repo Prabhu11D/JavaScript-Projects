@@ -1,0 +1,167 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #7c1599 0%, #921099 48%, #7e4ae8 100%);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+.player {
+  max-width: 750px;
+  border: 5px solid rgba(0, 0, 0, 0.2);
+  box-shadow: -5px 10px 20px rgb(0, 0, 0, 0.5);
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+.player:fullscreen {
+  max-width: none;
+  width: 100%;
+}
+.player:hover .player__controls{
+    transform: translateY(0);
+}
+
+/*********      Controller    *******/
+.player__controls {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  height: 50px;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(50px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* ---------------   video progress */
+.progress {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  cursor: ew-resize;
+}
+.progress__filled {
+  width: 0%;
+  position: absolute;
+  height: 100%;
+  background-color: rgb(255, 230, 6);
+}
+
+
+/* -----------------  Button Controls --------------------- */
+.button-controls {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 60px 60px;
+  padding: 5px;
+}
+button {
+  background-color: rgba(0, 0, 0, 0.486);
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.842);
+  font-weight: 600;
+  outline: none;
+  margin: auto 3px;
+}
+button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+button:active {
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+/* ------------ Input range control */
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  margin: 0 5px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(1, 1, 1, 0);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background: #ffc600;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.5px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #bada55;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+  background: #ffffff;
+  border-radius: 1.3px;
+  border: 0.2px solid rgba(1, 1, 1, 0);
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background: #ffc600;
+  cursor: pointer;
+}
+
+
+/************   Data Viewer  *********/
+.data-viewer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    font-size: 3rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
