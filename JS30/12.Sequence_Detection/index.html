@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Detection</title>
+    <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+    <script>
+        let unwanted = ['CapsLock', 'Shift'];
+        let pressed = [];
+        let secretCode = "Prabhu";
+        function detect(e){
+            if(!unwanted.includes(e.key)){
+            pressed.push(e.key)
+            pressed.splice(- secretCode.length - 1, pressed.length - secretCode.length);
+            console.log(pressed);
+            }
+
+            if(pressed.join('') == secretCode){
+                console.log("DINK DINK DINK");
+                cornify_add();
+            }
+        }
+        window.addEventListener('keyup', detect);
+    </script>
+</body>
+</html>
