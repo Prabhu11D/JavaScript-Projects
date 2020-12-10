@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.window-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.window_creator {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.267);
+  overflow: hidden;
+  box-shadow: 0.5px 0.5px 5px rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  justify-content: center;
+}
+.window_creator img {
+  width: 110%;
+  height: 110%;
+}
+.window_creator:hover {
+  transform: scale(0.99);
+}
+.window_creator:active {
+  transform: scale(0.97);
+}
+.activity_bar {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  background-color: rgb(228, 228, 228);
+  box-shadow: 1px 1px 8px black;
+}
+
+/* ===================== Window ==================== */
+.window {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 600px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px black;
+  overflow: hidden;
+  animation: popUp 500ms linear forwards;
+}
+@keyframes popUp {
+  0% {
+    transform: translate(-1000px, -1000px) scale(0);
+  }
+  90% {
+    transform: translate(20px, 20px) scale(1.01);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+.window .title-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px 5px 0 0;
+  align-items: center;
+  box-shadow: 1px 0px 2px black;
+}
+
+/** ============== Title bar buttons  ================ **/
+.window .title-bar button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 3px;
+  border: none;
+}
+.window .title-bar button:last-child {
+  margin-right: 4px;
+}
+.window .title-bar button img {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.window .title-bar button:hover {
+  transform: scale(0.95);
+}
+.window .title-bar button:active {
+  transform: scale(0.94);
+}
+
+/* ===== fullscreen */
+.window.fullscreenMode {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: calc(100% - 40px);
+  transition: all 400ms ease-in-out;
+}
+.window.removeFullScreenMode{
+    transition: all 400ms ease-in-out;
+    /* animation: removeFullScreenMode 400ms ease-in-out; */
+}
+@keyframes removeFullScreenMode{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+.closeAnimation {
+  animation: closeWindow 400ms ease-in-out forwards;
+}
+@keyframes closeWindow {
+  0% {
+    transform: scale(1) translate(0px, 0px);
+  }
+  100% {
+    transform: scale(0) translate(0px, 1000px);
+  }
+}
