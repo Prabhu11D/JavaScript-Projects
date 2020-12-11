@@ -55,6 +55,12 @@ function titleControls(e) {
       currentWindow.classList.add("fullscreenMode");
     }
   } else if (e.target.className === "minimize") {
+    const folder = activityBar.querySelector(`.folder-${targetNumber}`);
+    let g = folder.getBoundingClientRect();
+    console.log(g.top, g.left);
+    currentWindow.classList.add("minimized");
+    currentWindow.style.top = `${g.top}px`;
+    currentWindow.style.left = `${g.left}px`;
   }
 }
 

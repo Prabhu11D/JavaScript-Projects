@@ -2,19 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 body {
   width: 100%;
-  max-height: 100vh;
+  height: 100vh;
   overflow: hidden;
   background-color: white;
 }
 
-.window-container {
+.window_container {
   width: 100%;
   height: 100%;
   position: relative;
+  background: url('icons/wallpaper.jpg');
+  background-position: center center;
+  background-size: cover;
 }
 
 .window_creator {
@@ -34,6 +38,7 @@ body {
   align-items: center;
   z-index: 1000;
   justify-content: center;
+  outline: none;
 }
 .window_creator img {
   width: 110%;
@@ -55,6 +60,7 @@ body {
   box-shadow: 0px 1px 4px black;
   color: #eee;
   display: flex;
+  z-index: 10;
 }
 .time{
     background-color: rgba(54, 54, 54, 0.774);
@@ -79,7 +85,7 @@ body {
   left: 200px;
   width: 600px;
   height: 400px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   box-shadow: 0px 1px 4px black;
   overflow: hidden;
@@ -188,5 +194,18 @@ body {
     }
     100%{
         opacity: 1;
+    }
+}
+
+.minimized{
+    transition: all 400ms ease-in-out;
+    animation: minimizeAnimation 400ms ease-in-out forwards;
+}
+
+@keyframes minimizeAnimation{
+    0%{
+        transform: scale(1);
+    }100%{
+        transform: scale(0);
     }
 }
