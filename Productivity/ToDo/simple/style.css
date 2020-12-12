@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+/* ---------------------  Header  --------------------- */
+.header {
+    width: 35%;
+    height: 100%;
+    background: url("img/tree_portrait.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.header__title img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    /* border-radius: 50%; */
+}
+.header__title:active img {
+    transition: all 100ms ease-in-out;
+    transform: rotate(180deg);
+}
+.name {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.name span {
+    width: 100%;
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+}
+.name span:first-child {
+    margin-left: 20px;
+    font-size: 36px;
+    text-align: left;
+}
+p.todoCount {
+    position: absolute;
+    bottom: 5%;
+    width: 80%;
+    border-radius: 8px;
+    font-size: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ---------------------  Content  -------------------------- */
+.content {
+    width: 65%;
+    height: 100%;
+    position: relative;
+}
+ul.todoList {
+    width: 100%;
+    padding: 10px;
+    max-height: calc(100% - 60px);
+    overflow-y: scroll;
+}
+li {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.08));
+    align-items: center;
+    margin: 3px;
+    list-style-type: none;
+}
+li.deleted {
+    display: none;
+}
+li p {
+    flex: 1;
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    height: 100%;
+}
+li button:first-child {
+    width: 25px;
+    height: 25px;
+}
+li button {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: 10px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.undone {
+    background: url("img/circle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.done {
+    background: url("img/tick.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.done + p {
+    text-decoration: line-through;
+}
+.trash {
+    background: url("img/trash.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+li button:hover {
+    transform: scale(0.95);
+}
+li button:active {
+    transform: scale(0.9);
+}
+
+/* ------------- Form ---------------- */
+form.addTodo {
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+form .icon_add {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .icon_add img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+form input {
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 122, 71, 0.37);
+    border-radius: 50px;
+    border: none;
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    letter-spacing: 1px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+@media (max-width: 950px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .header {
+        width: 100%;
+        height: 200px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: url("img/tree_landscape.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .content {
+        height: calc(100vh - 200px);
+        width: 100%;
+    }
+    .header__title {
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        font-size: 21px;
+        color: rgba(255, 255, 255, 0.876);
+        text-shadow: 1px 1px 10px black;
+    }
+    .header__title img {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .header__title:active img {
+        transition: all 100ms ease-in-out;
+        transform: rotate(180deg);
+    }
+    .name {
+        width: 100%;
+        color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        text-shadow: 4px 0px 5px rgba(0, 0, 0, 0.3);
+    }
+    .name span {
+        display: inline;
+        font-size: 40px;
+        text-align: center;
+    }
+    .name span:first-child {
+        font-size: 28px;
+        text-align: left;
+    }
+    p.todoCount {
+        max-width: 60%;
+        border-radius: 8px;
+        font-size: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: rgba(255, 255, 255, 0.7);
+        padding: 5px 10px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
