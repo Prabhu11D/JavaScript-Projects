@@ -101,6 +101,6 @@ getName();
 getFocus();
 
 name.addEventListener('keypress', setName);
-name.addEventListener('blue', setName);
+name.addEventListener('blur', setName);
 focus.addEventListener('keypress', setFocus);
 focus.addEventListener('blur', setFocus);
