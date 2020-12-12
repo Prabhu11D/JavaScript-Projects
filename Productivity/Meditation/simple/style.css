@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background_video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+/******************* Time Setting ***********************/
+.time_setting {
+    height: 80%;
+    /* background-color: rgb(173, 173, 173); */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.time_setting button {
+    padding: 12px 20px;
+    font-size: 22px;
+    width: 40%;
+    border: none;
+    border-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.561);
+    color: rgb(31, 31, 31);
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.time_setting button:hover {
+    transform: scale(0.98);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ddd;
+}
+.time_setting button:active {
+    transform: scale(0.96);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ddd;
+}
+
+/***************** Player Container  ************/
+
+.player_container {
+    height: 80%;
+    /* background-color: lightgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex: 1.5;
+}
+.player_container .svg_button {
+    position: relative;
+    /* background-color: red; */
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+.player_container .svg_button svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+.player_container .svg_button .play_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35%;
+    border-radius: 50%;
+    height: 35%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+.player_container .play_button:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.player_container .svg_button .play_button img {
+    width: 40%;
+    height: 40%;
+}
+.player_container .time_display {
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/*************** sound setting  ************** */
+.sound_setting {
+    height: 80%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.sound_setting button {
+    border: none;
+    padding: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.15);
+}
+.sound_setting button:first-child {
+    background: linear-gradient(210deg, rgb(255, 145, 0), rgb(251, 248, 55));
+}
+.sound_setting button:last-child {
+    background: linear-gradient(
+        210deg,
+        rgba(0, 0, 0, 0.568),
+        rgba(255, 255, 255, 0.76)
+    );
+}
+.sound_setting button img {
+    width: 80%;
+    height: 80%;
+}
+.sound_setting button:hover {
+    transform: scale(0.95);
+}
+.sound_setting button:active {
+    transform: scale(0.9);
+}
