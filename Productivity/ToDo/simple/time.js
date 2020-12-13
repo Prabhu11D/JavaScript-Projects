@@ -4,13 +4,13 @@ const time = document.querySelector(".time");
 
 function setTime() {
     const days = [
+        "Sunday",
         "Monday",
         "Tuesday",
         "Wednesday",
         "Thursday",
         "Friday",
-        "Saturday",
-        "Sunday",
+        "Saturday"
     ];
     const months = [
         "January",
@@ -27,7 +27,7 @@ function setTime() {
         "December",
     ];
     const now = new Date();
-    let day = days[now.getDay() - 1];
+    let day = days[now.getDay()];
     let date = now.getDate();
     let month = months[now.getMonth()].slice(0,3);
     let year = now.getFullYear();
