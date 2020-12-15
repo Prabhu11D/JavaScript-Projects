@@ -1,0 +1,26 @@
+{
+  "coord": { "lon": 78, "lat": 20 },
+  "weather": [
+    { "id": 800, "main": "Clear", "description": "clear sky", "icon": "01d" }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 301.3,
+    "feels_like": 300.7,
+    "temp_min": 301.3,
+    "temp_max": 301.3,
+    "pressure": 1014,
+    "humidity": 43,
+    "sea_level": 1014,
+    "grnd_level": 978
+  },
+  "visibility": 10000,
+  "wind": { "speed": 2.85, "deg": 149 },
+  "clouds": { "all": 0 },
+  "dt": 1608015070,
+  "sys": { "country": "IN", "sunrise": 1607994925, "sunset": 1608034268 },
+  "timezone": 19800,
+  "id": 1272596,
+  "name": "Digras",
+  "cod": 200
+}
