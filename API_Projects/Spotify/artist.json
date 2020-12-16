@@ -1,0 +1,592 @@
+{
+    "artists": {
+        "href": "https://api.spotify.com/v1/search?query=Aniruth&type=artist&market=IN&offset=0&limit=20",
+        "items": [
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 3033986
+                },
+                "genres": ["desi hip hop", "filmi", "tamil hip hop"],
+                "href": "https://api.spotify.com/v1/artists/4zCH9qm4R2DADamUHMCa6O",
+                "id": "4zCH9qm4R2DADamUHMCa6O",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/98da85dcd6f32ff26aed48fb410a875b7b177bfe",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/cd052e10035ba1917f633ad57da145d5646036e4",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/d49fe423b8fec88c40774c329438793d32839eb4",
+                        "width": 160
+                    }
+                ],
+                "name": "Anirudh Ravichander",
+                "popularity": 72,
+                "type": "artist",
+                "uri": "spotify:artist:4zCH9qm4R2DADamUHMCa6O"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4lMtdJMEHNQok5YLbgUBEz"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 617
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/4lMtdJMEHNQok5YLbgUBEz",
+                "id": "4lMtdJMEHNQok5YLbgUBEz",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2737ddaf0f09a62b9d629d93839",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e027ddaf0f09a62b9d629d93839",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048517ddaf0f09a62b9d629d93839",
+                        "width": 64
+                    }
+                ],
+                "name": "Anirudh Sharma",
+                "popularity": 33,
+                "type": "artist",
+                "uri": "spotify:artist:4lMtdJMEHNQok5YLbgUBEz"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3nUYKYYtrA7Nw2tdYslLUE"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1912
+                },
+                "genres": ["tamil pop"],
+                "href": "https://api.spotify.com/v1/artists/3nUYKYYtrA7Nw2tdYslLUE",
+                "id": "3nUYKYYtrA7Nw2tdYslLUE",
+                "images": [],
+                "name": "Anirudh Ravichander and Neeti Mohan",
+                "popularity": 29,
+                "type": "artist",
+                "uri": "spotify:artist:3nUYKYYtrA7Nw2tdYslLUE"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7JZpVZJRgN6mMiNiJldFf0"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 42374
+                },
+                "genres": ["tamil pop"],
+                "href": "https://api.spotify.com/v1/artists/7JZpVZJRgN6mMiNiJldFf0",
+                "id": "7JZpVZJRgN6mMiNiJldFf0",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2733da50cbcea26f6b95c80026d",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e023da50cbcea26f6b95c80026d",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048513da50cbcea26f6b95c80026d",
+                        "width": 64
+                    }
+                ],
+                "name": "Anirudh Ravichander and Vignesh Shivan",
+                "popularity": 26,
+                "type": "artist",
+                "uri": "spotify:artist:7JZpVZJRgN6mMiNiJldFf0"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7ojuUObZvGIFTPmThkU91K"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 251
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/7ojuUObZvGIFTPmThkU91K",
+                "id": "7ojuUObZvGIFTPmThkU91K",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273bc8148c2e3dadcd5f46695e3",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02bc8148c2e3dadcd5f46695e3",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851bc8148c2e3dadcd5f46695e3",
+                        "width": 64
+                    }
+                ],
+                "name": "Anirudh Bhola",
+                "popularity": 24,
+                "type": "artist",
+                "uri": "spotify:artist:7ojuUObZvGIFTPmThkU91K"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5GeefTml5C23pXSEUwMYGU"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1093
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/5GeefTml5C23pXSEUwMYGU",
+                "id": "5GeefTml5C23pXSEUwMYGU",
+                "images": [],
+                "name": "Anirudh Ravichander and Shakthishree Gopalan",
+                "popularity": 23,
+                "type": "artist",
+                "uri": "spotify:artist:5GeefTml5C23pXSEUwMYGU"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3A0DhqpnRljV9fQUzCC3pP"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1136
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/3A0DhqpnRljV9fQUzCC3pP",
+                "id": "3A0DhqpnRljV9fQUzCC3pP",
+                "images": [],
+                "name": "Anirudh Ravichander and Sivakarthikeyan",
+                "popularity": 21,
+                "type": "artist",
+                "uri": "spotify:artist:3A0DhqpnRljV9fQUzCC3pP"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0ZkAQux3Op9X450mgwBh8A"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 624
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/0ZkAQux3Op9X450mgwBh8A",
+                "id": "0ZkAQux3Op9X450mgwBh8A",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2733f1cd38bfb800eaa40131275",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e023f1cd38bfb800eaa40131275",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048513f1cd38bfb800eaa40131275",
+                        "width": 64
+                    }
+                ],
+                "name": "Anirudh Vijay",
+                "popularity": 18,
+                "type": "artist",
+                "uri": "spotify:artist:0ZkAQux3Op9X450mgwBh8A"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3YL1dOYfun4NYIqG4YxtTJ"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/3YL1dOYfun4NYIqG4YxtTJ",
+                "id": "3YL1dOYfun4NYIqG4YxtTJ",
+                "images": [],
+                "name": "Anirudh Sastry",
+                "popularity": 13,
+                "type": "artist",
+                "uri": "spotify:artist:3YL1dOYfun4NYIqG4YxtTJ"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1NGsPOoJDnmbvFMa4o6KDI"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 306
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/1NGsPOoJDnmbvFMa4o6KDI",
+                "id": "1NGsPOoJDnmbvFMa4o6KDI",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273ef277a6d2d166f31ddff2ad9",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02ef277a6d2d166f31ddff2ad9",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851ef277a6d2d166f31ddff2ad9",
+                        "width": 64
+                    }
+                ],
+                "name": "Anirudh Ravichander,Shabareesh Varma",
+                "popularity": 12,
+                "type": "artist",
+                "uri": "spotify:artist:1NGsPOoJDnmbvFMa4o6KDI"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5pNULekGlDfT741DgBQScn"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 52
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/5pNULekGlDfT741DgBQScn",
+                "id": "5pNULekGlDfT741DgBQScn",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/59e0765bec1114199083a74123d21dfebaa6af92",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/6fa494b58e7d0aca254ecfc52539ed705e263482",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/8d3522a82d77a208be78293ffa047a67f4b92c73",
+                        "width": 160
+                    }
+                ],
+                "name": "Anirudh Sharma",
+                "popularity": 14,
+                "type": "artist",
+                "uri": "spotify:artist:5pNULekGlDfT741DgBQScn"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/40yIKIP4JwrsB1OL3dKau9"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 2131
+                },
+                "genres": ["mollywood"],
+                "href": "https://api.spotify.com/v1/artists/40yIKIP4JwrsB1OL3dKau9",
+                "id": "40yIKIP4JwrsB1OL3dKau9",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/c964228ff7ee13226133f7ab9deba2aacdfb54b2",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/1eedf4b5caa30a8d8125420763f8efc5ae27cd75",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/69077f0c156c4af31765d7f71a7416a24dbfabdf",
+                        "width": 160
+                    }
+                ],
+                "name": "Bindu Anirudhan",
+                "popularity": 33,
+                "type": "artist",
+                "uri": "spotify:artist:40yIKIP4JwrsB1OL3dKau9"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1vUTJblvpt6XOSKxNltNgI"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 3
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/1vUTJblvpt6XOSKxNltNgI",
+                "id": "1vUTJblvpt6XOSKxNltNgI",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273f045f5f3e95e78a5fe64bc9e",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02f045f5f3e95e78a5fe64bc9e",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851f045f5f3e95e78a5fe64bc9e",
+                        "width": 64
+                    }
+                ],
+                "name": "Anirudha Edm Arts",
+                "popularity": 7,
+                "type": "artist",
+                "uri": "spotify:artist:1vUTJblvpt6XOSKxNltNgI"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1yxElNCCvyGH3Ee0lqgZrn"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 6
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/1yxElNCCvyGH3Ee0lqgZrn",
+                "id": "1yxElNCCvyGH3Ee0lqgZrn",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2738c1ac4b9f4ed5ae421f98c44",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e028c1ac4b9f4ed5ae421f98c44",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048518c1ac4b9f4ed5ae421f98c44",
+                        "width": 64
+                    }
+                ],
+                "name": "Anirudh Sharma",
+                "popularity": 9,
+                "type": "artist",
+                "uri": "spotify:artist:1yxElNCCvyGH3Ee0lqgZrn"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5gSa4nTfkCfwOsvaD7dlu1"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 177
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/5gSa4nTfkCfwOsvaD7dlu1",
+                "id": "5gSa4nTfkCfwOsvaD7dlu1",
+                "images": [],
+                "name": "Anirudha Joshi",
+                "popularity": 5,
+                "type": "artist",
+                "uri": "spotify:artist:5gSa4nTfkCfwOsvaD7dlu1"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0vWyMSeg4ixQ98Srb8E4y5"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 110
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/0vWyMSeg4ixQ98Srb8E4y5",
+                "id": "0vWyMSeg4ixQ98Srb8E4y5",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2730e43db3f9ac36b339e7c816a",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e020e43db3f9ac36b339e7c816a",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048510e43db3f9ac36b339e7c816a",
+                        "width": 64
+                    }
+                ],
+                "name": "Anitha",
+                "popularity": 42,
+                "type": "artist",
+                "uri": "spotify:artist:0vWyMSeg4ixQ98Srb8E4y5"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7cbgJdkTL4pP9h5vcJuSuh"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 34
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/7cbgJdkTL4pP9h5vcJuSuh",
+                "id": "7cbgJdkTL4pP9h5vcJuSuh",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/a842b16654a947e2afdcde4f7ab0f936a423a11d",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/1bd3a396a7311c9811a35e16a33d7c4576820f25",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/a8cc4cafc708dffebed07e7fab6c994eb3e78520",
+                        "width": 160
+                    }
+                ],
+                "name": "Anirudh Subramanian",
+                "popularity": 4,
+                "type": "artist",
+                "uri": "spotify:artist:7cbgJdkTL4pP9h5vcJuSuh"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3bD7WaIwFeJMNv8smNGODB"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1736
+                },
+                "genres": ["indian fusion"],
+                "href": "https://api.spotify.com/v1/artists/3bD7WaIwFeJMNv8smNGODB",
+                "id": "3bD7WaIwFeJMNv8smNGODB",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b273667f4cce5008666a0f715391",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e02667f4cce5008666a0f715391",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d00004851667f4cce5008666a0f715391",
+                        "width": 64
+                    }
+                ],
+                "name": "The Anirudh Varma Collective",
+                "popularity": 10,
+                "type": "artist",
+                "uri": "spotify:artist:3bD7WaIwFeJMNv8smNGODB"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5CCMe1VD7kxXh4HUcd7cM3"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 1
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/5CCMe1VD7kxXh4HUcd7cM3",
+                "id": "5CCMe1VD7kxXh4HUcd7cM3",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/ab67616d0000b2731a2955f8f085bd7458c33ddc",
+                        "width": 640
+                    },
+                    {
+                        "height": 300,
+                        "url": "https://i.scdn.co/image/ab67616d00001e021a2955f8f085bd7458c33ddc",
+                        "width": 300
+                    },
+                    {
+                        "height": 64,
+                        "url": "https://i.scdn.co/image/ab67616d000048511a2955f8f085bd7458c33ddc",
+                        "width": 64
+                    }
+                ],
+                "name": "Anirudh Shashtry",
+                "popularity": 2,
+                "type": "artist",
+                "uri": "spotify:artist:5CCMe1VD7kxXh4HUcd7cM3"
+            },
+            {
+                "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/4TRInCiOUhYZujbBCdURUD"
+                },
+                "followers": {
+                    "href": null,
+                    "total": 4
+                },
+                "genres": [],
+                "href": "https://api.spotify.com/v1/artists/4TRInCiOUhYZujbBCdURUD",
+                "id": "4TRInCiOUhYZujbBCdURUD",
+                "images": [
+                    {
+                        "height": 640,
+                        "url": "https://i.scdn.co/image/d95349554745eb175aca890dcc3492d45d753234",
+                        "width": 640
+                    },
+                    {
+                        "height": 320,
+                        "url": "https://i.scdn.co/image/82204071d24965ee3f3c7bf4679b643cdfaf30b6",
+                        "width": 320
+                    },
+                    {
+                        "height": 160,
+                        "url": "https://i.scdn.co/image/52c28aa298eafda236d4fb535f91878278061f6f",
+                        "width": 160
+                    }
+                ],
+                "name": "Anirudh Trivedi",
+                "popularity": 1,
+                "type": "artist",
+                "uri": "spotify:artist:4TRInCiOUhYZujbBCdURUD"
+            }
+        ],
+        "limit": 20,
+        "next": "https://api.spotify.com/v1/search?query=Aniruth&type=artist&market=IN&offset=20&limit=20",
+        "offset": 0,
+        "previous": null,
+        "total": 21
+    }
+}
