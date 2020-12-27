@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9e9e9;
+  font-family: "Fira Mono", sans-serif;
+}
+
+.calcy {
+  box-shadow: -6px -6px 10px #fff, 6px 6px 10px rgba(0, 0, 0, 0.4);
+  width: 400px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+input {
+  box-shadow: inset -6px -6px 10px #fff, inset 6px 6px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  text-align: right;
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  padding-right: 20px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.keys {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+}
+.keys button {
+  font-weight: 550;
+  font-size: 1.05rem;
+  cursor: pointer;
+  box-shadow: -6px -6px 10px #fff, 6px 6px 10px rgba(0, 0, 0, 0.4);
+  margin: 4px;
+  width: 60px;
+  align-self: center;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+.keys button:hover, .keys button:active {
+  background-color: #d4d4d4;
+}
+.keys button:active {
+  transform: scale(0.95);
+  box-shadow: inset -6px -6px 10px #fff, inset 6px 6px 10px rgba(0, 0, 0, 0.4);
+}
+.keys button.op__key, .keys button.eq__key {
+  color: orangered;
+}
