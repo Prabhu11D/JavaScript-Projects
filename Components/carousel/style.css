@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.contentContainer{
+    width: fit-content;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.imageContainer{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+img{
+    position: absolute;
+}
+
+.slideFromRight{
+    animation: slideFromRight 400ms ease-in-out;
+}
+
+.slideFromLeft{
+    animation: slideFromLeft 400ms ease-in-out;
+}
+
+.fade{
+    animation: fade 400ms ease-in-out
+}
+
+@keyframes slideFromRight{
+    0%{
+        left: 100%;
+        opacity: 0;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft{
+    0%{
+        left: -100%;
+        opacity: 0;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.textContainer{
+    width: 100%;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+p{
+    backdrop-filter: blur(12px) brightness(80%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0;
+    font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    user-select: none;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.9);
+    transition: all 400ms;
+}
